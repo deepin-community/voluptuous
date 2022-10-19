@@ -1,0 +1,23 @@
+From 6bb916e353ee49059e3d0830838d320013f7c80f Mon Sep 17 00:00:00 2001
+From: Barry Warsaw <barry@python.org>
+Date: Wed, 3 Aug 2016 10:27:23 -0400
+Subject: Add tests package so nose will find them.
+
+Patch-Name: add-voluptuous-tests.patch
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: voluptuous/setup.py
+===================================================================
+--- voluptuous.orig/setup.py
++++ voluptuous/setup.py
+@@ -23,7 +23,7 @@ setup(
+     long_description_content_type='text/markdown',
+     license='BSD',
+     platforms=['any'],
+-    packages=['voluptuous'],
++    packages=['voluptuous', 'voluptuous.tests'],
+     author='Alec Thomas',
+     author_email='alec@swapoff.org',
+     classifiers=[

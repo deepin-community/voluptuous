@@ -1,0 +1,37 @@
+Source: voluptuous
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Antoine Musso <hashar@free.fr>,
+ Thomas Goirand <zigo@debian.org>,
+ Paul Belanger <paul.belanger@polybeacon.com>,
+ Robert S. Edmonds <edmonds@debian.org>,
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-python,
+ python3-all,
+ python3-nose,
+ python3-setuptools,
+Standards-Version: 4.4.1
+Homepage: https://github.com/alecthomas/voluptuous
+Vcs-Git: https://salsa.debian.org/python-team/packages/voluptuous.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/voluptuous
+
+Package: python3-voluptuous
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Python 3 library to validate data
+ Voluptuous is primarily intended to validate data coming in to Python
+ as JSON, YAML, etc. The aim is to offer a light-weight style with three
+ main goals:
+  1. simplicity
+  2. support for complex data structures
+  3. provide useful error messages
+ .
+ It has been inspired by Validino and to a lesser extent by jsonvalidator and
+ json_schema.
+ .
+ This package provides the Python 3.x module.
